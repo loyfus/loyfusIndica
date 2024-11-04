@@ -17,6 +17,11 @@
     <div>
         <button type="submit">Login</button>
     </div>
+
+    <div th:if="${param.error}">
+        <p style="color:red;">Usuário ou senha inválidos!</p>
+    </div>
+    
 </form>
 </body>
 </html>
