@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/produto")
+@RequestMapping("/")
 public class ProdutoController {
     private ProdutoService produtoService;
 
@@ -17,7 +17,7 @@ public class ProdutoController {
     }
 
     @PostMapping
-    List<Produto> crete(@RequestBody Produto produto) {
+    List<Produto> create(@RequestBody Produto produto) {
         return produtoService.create(produto);
     }
 
